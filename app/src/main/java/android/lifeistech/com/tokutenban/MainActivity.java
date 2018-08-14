@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void set(View v){
-        String 
+
     }
 
 

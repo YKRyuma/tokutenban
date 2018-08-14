@@ -28,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="コートチェンジ" />
+            android:text="コートチェンジ"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editText2"
@@ -62,8 +63,10 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="0"
+                android:textAllCaps="true"
                 android:textColor="#ff5454"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <ListView
                 android:id="@+id/listView"
@@ -80,8 +83,10 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="0"
+                android:textAllCaps="true"
                 android:textColor="#54ff54"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +98,7 @@
 
             <LinearLayout
                 android:layout_width="250dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom|left"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -101,12 +106,13 @@
                 <Button
                     android:id="@+id/button"
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:onClick="add1"
-                    android:text="得点" />
+                    android:text="得点"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button3"
@@ -115,7 +121,8 @@
                     android:layout_gravity="bottom|center"
                     android:layout_weight="1"
                     android:onClick="minus1"
-                    android:text="修正 -1" />
+                    android:text="修正 -1"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -130,7 +137,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="set"
-                    android:text="セット終了" />
+                    android:text="セット終了"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button6"
@@ -140,19 +149,21 @@
                     android:layout_weight="1"
                     android:onClick="reset1"
                     android:text="得点リセット"
-                    android:textSize="12sp" />
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="AII RESET" />
+                    android:text="AII RESET"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="250dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom|right"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -160,11 +171,12 @@
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="150dp"
-                    android:layout_height="50dp"
+                    android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:onClick="add2"
-                    android:text="得点" />
+                    android:text="得点"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button4"
@@ -174,7 +186,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:onClick="minus2"
-                    android:text="修正 -1" />
+                    android:text="修正 -1"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
