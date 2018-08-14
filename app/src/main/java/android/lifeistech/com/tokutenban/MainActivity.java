@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     int count2;
     TextView textView1;
     TextView textView2;
+    EditText editText1;
+    EditText editText2;
     ListView listView1;
     ArrayAdapter adapter1;
 
@@ -28,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         textView1=(TextView) findViewById(R.id.textView1);
         textView2=(TextView) findViewById(R.id.textView2);
         listView1=(ListView)findViewById(R.id.listView1);
+        editText1=(EditText)findViewById(R.id.editText1);
+        editText2=(EditText)findViewById(R.id.editText2);
         adapter1  = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
 
 
@@ -89,20 +94,26 @@ public class MainActivity extends AppCompatActivity {
 
         adapter1.add(text1 +"-" + text2);
 
-
-
-
-
-
-
         count1=0;
         count2=0;
         textView1.setText(String.valueOf(count1));
         textView2.setText(String.valueOf(count2));
 
+    }
+
+    public void swap(View v){
+        String text3;
+        String text4;
+        text3=editText1.getText().toString();
+        text4=editText2.getText().toString();
+
+        editText1.setText(text4);
+        editText2.setText(text3);
 
 
     }
+
+
 
 
 
