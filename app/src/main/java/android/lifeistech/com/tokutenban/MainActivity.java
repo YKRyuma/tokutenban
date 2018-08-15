@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         count2=0;
         textView1.setText(String.valueOf(count1));
         textView2.setText(String.valueOf(count2));
+        mlistAdapter.clear();
 
 //        adapter1.clear();
 
