@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.ImageViewCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,8 +46,13 @@ public class listAdapter extends ArrayAdapter<list> {
             }
 
             final list item=getItem(position);
-            viewHolder.point1TextView.setText(item.point1);
-            viewHolder.point2TextView.setText(item.point2);
+            if(item == null) {
+                System.out.println("NULL");
+            }
+            Log.d("Item", String.valueOf(item.point1));
+            Log.d("view", String.valueOf(viewHolder.point1TextView));
+            viewHolder.point1TextView.setText(String.valueOf(item.point1));
+            viewHolder.point2TextView.setText(String.valueOf(item.point2));
             return convertView;
         }
 
