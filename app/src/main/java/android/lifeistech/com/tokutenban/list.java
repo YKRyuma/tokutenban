@@ -10,4 +10,15 @@ public class list {
         this.point2 = point2;
     }
 
+    public void swap(){
+        int tmp;
+        tmp =this.point1;
+
+        point1=point2;
+        point2=tmp;
+
+
+
+    }
+
 }
