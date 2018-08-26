@@ -147,11 +147,37 @@ public class MainActivity extends AppCompatActivity {
 
                 count1 = count1 - 1;
                 textView1.setText(String.valueOf(count1));
+
+                if (count1 <= 0) {
+                    String text1;
+                    String text2;
+                    text1 = textView1.getText().toString();
+                    text2 = textView2.getText().toString();
+
+                    count1 = 0;
+                    count2 = 0;
+                    textView1.setText(String.valueOf(count1));
+                    textView2.setText(String.valueOf(count2));
+
+                }
             }
 
             public void minus2(View v) {
                 count2 = count2 - 1;
                 textView2.setText(String.valueOf(count2));
+
+                if (count1 <= 0) {
+                    String text1;
+                    String text2;
+                    text1 = textView1.getText().toString();
+                    text2 = textView2.getText().toString();
+
+                    count1 = 0;
+                    count2 = 0;
+                    textView1.setText(String.valueOf(count1));
+                    textView2.setText(String.valueOf(count2));
+
+                }
 
             }
 
