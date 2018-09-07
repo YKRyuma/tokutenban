@@ -1,6 +1,7 @@
 package android.lifeistech.com.tokutenban;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.service.autofill.Dataset;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -109,11 +110,15 @@ public class MainActivity extends AppCompatActivity {
                     count2 = 0;
                     textView1.setText(String.valueOf(count1));
                     textView2.setText(String.valueOf(count2));
+                    editText1.setTextColor(Color.rgb(255,0,204));
+                    editText2.setTextColor(Color.rgb(255,255,255));
 
                 }
 
 
                 textView1.setText(String.valueOf(count1));
+                editText1.setTextColor(Color.rgb(255,102,153));
+                editText2.setTextColor(Color.rgb(255,255,255));
 
 
 
@@ -140,7 +145,10 @@ public class MainActivity extends AppCompatActivity {
                     textView1.setText(String.valueOf(count1));
                     textView2.setText(String.valueOf(count2));
 
+
                 }
+                editText2.setTextColor(Color.rgb(255,102,153));
+                editText1.setTextColor(Color.rgb(255,255,255));
             }
 
             public void minus1(View v) {
@@ -150,14 +158,10 @@ public class MainActivity extends AppCompatActivity {
 
                 if (count1 <= 0) {
                     String text1;
-                    String text2;
                     text1 = textView1.getText().toString();
-                    text2 = textView2.getText().toString();
-
                     count1 = 0;
-                    count2 = 0;
                     textView1.setText(String.valueOf(count1));
-                    textView2.setText(String.valueOf(count2));
+
 
                 }
             }
@@ -167,14 +171,10 @@ public class MainActivity extends AppCompatActivity {
                 textView2.setText(String.valueOf(count2));
 
                 if (count1 <= 0) {
-                    String text1;
                     String text2;
-                    text1 = textView1.getText().toString();
                     text2 = textView2.getText().toString();
-
-                    count1 = 0;
+                    
                     count2 = 0;
-                    textView1.setText(String.valueOf(count1));
                     textView2.setText(String.valueOf(count2));
 
                 }
